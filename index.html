@@ -8,9 +8,19 @@
 	</head>
 	<body>
 		<header>
-		<h1>🐾 Save Our Species</h1>
-		<p>Filter animals by endangerment level and donate to protect them</p>
+			<h1>🐾 Save Our Species</h1>
+			<p>Filter animals by endangerment level and donate to protect them</p>
 		</header>
+		<div class="controls">
+			<label for="filter">Filter by Endangerment:</label>
+			<select id="filter" onchange="filterSpecies()">
+				<option value="all">All</option>
+				<option value="Extinct in the Wild">Extinct in the Wild</option>
+				<option value="Critically Endangered">Critically Endangered</option>
+				<option value="Endangered">Endangered</option>
+				<option value="Vulnerable">Vulnerable</option>
+			</select>
+		</div>
 		<main class="species-container" id="speciesContainer">
 			<div class="card" data-status="Vulnerable">
 				<img src="img/panda.jpg" alt="Giant Panda" />
@@ -51,6 +61,13 @@
 				<img src="img/elephant.jpg" alt="Elephant">
 				<h3>African Savanna Elephant</h3>
 				<p class="status vulnerable">Vulnerable</p>
+				<p>Threatened by ivory poaching and habitat loss.</p>
+				<button class="donate-btn" onclick="donate()">Donate to Protect</button>
+			</div>
+			<div class="card" data-status="Extinct in the Wild">
+				<img src="img/crow.jpg" alt="Hawaiian Crow">
+				<h3>Hawaiian Crow</h3>
+				<p class="status extinctWild">Extinct in the Wild</p>
 				<p>Threatened by ivory poaching and habitat loss.</p>
 				<button class="donate-btn" onclick="donate()">Donate to Protect</button>
 			</div>

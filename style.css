@@ -47,6 +47,9 @@ select {
     font-weight:bold; 
     margin:10px 0; 
 }
+.extinctWild { 
+    color:#6b0000; 
+}
 .critically { 
     color:#9b0000; 
 }
