@@ -1,28 +1,17 @@
 <!doctype html>
 <html lang="en">
 	<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Save Our Species</title>
-	<link rel="stylesheet" href="style.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Save Our Species</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<header>
-			<h1>Save Our Species</h1>
-			<p>Filter animals by endangerment level and donate to protect them</p>
+		<h1>🐾 Save Our Species</h1>
+		<p>Filter animals by endangerment level and donate to protect them</p>
 		</header>
-
-		<div class="controls">
-			<label for="filter">Filter by Endangerment:</label>
-			<select id="filter" onchange="filterSpecies()">
-				<option value="all">All</option>
-				<option value="Critically Endangered">Critically Endangered</option>
-				<option value="Endangered">Endangered</option>
-				<option value="Vulnerable">Vulnerable</option>
-			</select>
-		</div>
-
-		<section class="species-container" id="speciesContainer">
+		<main class="species-container" id="speciesContainer">
 			<div class="card" data-status="Vulnerable">
 				<img src="img/panda.jpg" alt="Giant Panda" />
 				<h3>Giant Panda</h3>
@@ -44,7 +33,28 @@
 				<p></p>
 				<button class="donate-btn" onclick="donate()">Donate to Protect</button>
 			</div>
-		</section>
+			<div class="card" data-status="Endangered">
+				<img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Galápagos penguins">
+				<h3>Galápagos penguins</h3>
+				<p class="status endangered">Endangered</p>
+				<p>Threatened by pollution and climate change.</p>
+				<button class="donate-btn" onclick="donate()">Donate to Protect</button>
+			</div>
+			<div class="card" data-status="Endangered">
+				<img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Red Panda">
+				<h3>Red Panda</h3>
+				<p class="status endangered">Endangered</p>
+				<p>Threatened by poaching and habitat loss.</p>
+				<button class="donate-btn" onclick="donate()">Donate to Protect</button>
+			</div>
+			<div class="card" data-status="Vulnerable">
+				<img src="https://images.unsplash.com/photo-1552410260-0fd9b577afa6" alt="Elephant">
+				<h3>Elephant</h3>
+				<p class="status vulnerable">Vulnerable</p>
+				<p>Threatened by ivory poaching and habitat loss.</p>
+				<button class="donate-btn" onclick="donate()">Donate to Protect</button>
+			</div>
+		</main>
 		<script src="script.js"></script>
 	</body>
 </html>
